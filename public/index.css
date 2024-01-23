@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-family: 'Open Sans', sans-serif;
+    
+ }
+ .container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+ }
+ .container .title p{
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+
+ }
+ .container .title p span{
+    font-size: 20px;
+    font-weight: bold;
+ }
+input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 15px;
+    font-size: 16px;
+ }
+
+ .dd{
+    width: 60px;
+    margin-right: 5px;
+ }
+ .yyyy{
+    width: 75px;
+ }
+ form .dropdownlabel{
+    font-size: 20px;
+    font-weight: 200;
+ }
+ #TZlist{
+    height: 30px;
+ }
+form .button{
+    display: flex;
+    justify-content: center;
+}
+form .button button{
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24); 
+}
+form .button button:active{
+   transform: scale(0.98); 
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+}
+form .button button:hover{
+    background-color: black;
+    color: white;
+
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #304146;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+ }
+ .footer p{
+    font-size: 25px;
+ }
+
+@media (max-width: 584px){
+    .container{
+        max-width: 100%;
+    }
+}
