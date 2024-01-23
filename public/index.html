@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>12AM Wish</title>
+    <!--  -->
+    <link rel="icon" type="image/x-icon" href="/birthday.ico">
+
+    <!--  -->
+    
 </head>
 <body>
     <div class="container">
@@ -25,7 +30,7 @@
                     <input class="dd" type="number" placeholder="MM" id="moninput" required>
                     <input class="yyyy" type="number" placeholder="YYYY" id="yearinput" required>
                 </div>
-                <br /><br />
+                <br />
                 <span class="dropdownlabel">Select the Time Zone</span>
                 <select id="TZlist" placeholder="Time Zone">
                     <option value="EST">EST</option>
@@ -77,12 +82,12 @@
             }else if(dateinput.value<=0 || dateinput.value>31 || moninput.value<=0 || moninput.value>=12){
                 alert("Check the date and month field")
             }
-            // else if(CurrentDate > GivenDate){
-            //     alert('Entered date must be greater than today date \nplease correct...');
-            //     return;
-            // }
+            else if(CurrentDate > GivenDate){
+                alert('Entered date must be greater than today date \nplease correct...');
+                return;
+            }
             else{
-                alert("success");
+                alert("Hurray! success");
                 const res = await fetch(baseURl,
                 {
                     method: 'POST',
