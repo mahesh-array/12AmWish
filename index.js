@@ -58,7 +58,9 @@ app.use(express.static('public'))
 app.use(express.json())
 
 app.get('/',(req,res)=>{
-    res.status(200).send('<h1>h1</h1>');
+    const filePath = path.resolve(__dirname, 'index.html');
+    res.sendFile(filePath);
+    // res.status(200).send('<h1>h1</h1>');
 })
 app.post('/',(req,res)=>{
     const parcel = req.body;
